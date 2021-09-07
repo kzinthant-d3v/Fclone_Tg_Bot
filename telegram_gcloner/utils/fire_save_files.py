@@ -70,7 +70,8 @@ class MySaveFileThread(threading.Thread):
                     '--transfers=256',
                     '--drive-pacer-min-sleep=1ms',
                     '--drive-pacer-burst=5000',
-                    '--check-first'
+                    '--check-first',
+                    '--drive-chunk-size=256M'
                 ]
             else:
                 command_line += [
